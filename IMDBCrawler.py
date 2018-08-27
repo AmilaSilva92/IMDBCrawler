@@ -34,8 +34,10 @@ def extractGenre(movie_title):
 	    soup = BeautifulSoup(requests.get(urlPage).text, 'lxml')
 
 	    for item in soup.find_all(type="application/ld+json"):
-	        jsonD = item.text
-	        return json.loads(jsonD)['genre']
+	        jsonD = json.loads(item.text)
+            if 'genre' in jsonD.keys():
+                return jsonD['genre']
+	return []
 
 if __name__ == '__main__':
 	movie = str(input('Movie Name: '))
