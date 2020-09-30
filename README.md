@@ -1,7 +1,5 @@
-## Python Implementation For IMDB Crawler
+## Python IMDB Crawler
 
-Author 	: Amila Silva <br />
-Email  	: amilacove@gmail.com <br />
-Date 	  : 27/08/2018
+Author 	: Amila Silva
 
 This script crawls movie generes for the movie titles from IMDB and easily can be extended to crawl other information about movies from IMDB.
